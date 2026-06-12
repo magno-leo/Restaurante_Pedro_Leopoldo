@@ -1,0 +1,32 @@
+/*header*/
+.header-padrao{
+    display: flex;
+    justify-content: space-between;
+    padding: 0% 5%;
+    height: 150px;
+}
+.container-esquerda-header{
+    display: flex; 
+    justify-content: space-between;
+    width: 40%;
+    height: 100%;
+}
+.container-esquerda-header ul{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.container-esquerda-header li,
+.container-esquerda-header a{
+    list-style: none;
+    text-decoration: none;
+    padding: 0px 5px;
+    line-height: 100%;
+}
+.container-esquerda-header img{
+    height: 100%;
+    width: 150px;
+    background-color: aqua;
+}
