@@ -1,4 +1,17 @@
+/*Formatação textos*/
+.titulo-section{
+    font-family: "Inter", sans-serif;
+    font-size: 40px;
+    color: #000000;
+}
+.titulo-section span{
+    font-size: 40px;
+    color: var(--cor-primaria-verm);
+}
 /*header*/
+a{
+    text-decoration: none;
+}
 .header-padrao{
     display: flex;
     justify-content: space-between;
@@ -8,8 +21,11 @@
 .container-esquerda-header{
     display: flex; 
     justify-content: space-between;
-    width: 40%;
+    width: 50%;
     height: 100%;
+}
+.container-esquerda-header nav{
+    width: 60%;
 }
 .container-esquerda-header ul{
     display: flex; 
@@ -17,6 +33,7 @@
     align-items: center;
     height: 100%;
     width: 100%;
+
 }
 .container-esquerda-header li,
 .container-esquerda-header a{
@@ -27,6 +44,57 @@
 }
 .container-esquerda-header img{
     height: 100%;
-    width: 150px;
-    background-color: aqua;
+
+}
+.container-direita-header{
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.container-direita-header img{
+    height: 26px;
+    margin-right: 4%;
+}
+.botao-contato-header{
+    background-color:  var(--cor-primaria-verm);
+    height: 50px;
+    width: 200px;
+    padding: 0% 2%;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}   
+
+.botao-contato-header a{
+    color: white;
+}
+.shopping-button-header{
+    height: 26px;
+    width: 26px;
+    margin-right: 4%;
+    background-image: url('../img/shared/shopping-bag.png');
+    background-size: cover;
+    position: relative;
+}
+.shopping-button-header div{
+    width: 18px;
+    height: 18px;
+    border-radius: 50px;
+    background-color: var(--cor-primaria-verm);
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.shopping-button-header div p{
+    color: white;
+    font-size: 13px;
+}
+/*section*/
+.section-padrao{
+    padding: 0% 10%;
 }
