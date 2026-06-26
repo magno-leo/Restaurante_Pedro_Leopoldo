@@ -1,12 +1,26 @@
+body{
+    background-color: whitesmoke;
+}
 /*Formatação textos*/
 .titulo-section{
     font-family: "Inter", sans-serif;
-    font-size: 40px;
+    font-size: 50px;
     color: #000000;
+    line-height: 150%;
+    margin-bottom: 30px;
 }
 .titulo-section span{
-    font-size: 40px;
+    font-size: 50px;
+    line-height: 150%;
+    margin-bottom: 30px;
     color: var(--cor-primaria-verm);
+}
+.texto-padrao-bold{
+    font-weight: 600;
+    line-height: 150%;
+}
+.texto-padrao{
+    line-height: 150%;
 }
 /*header*/
 a{
@@ -42,6 +56,7 @@ a{
     padding: 0px 5px;
     line-height: 100%;
 }
+
 .container-esquerda-header img{
     height: 100%;
 
@@ -56,9 +71,10 @@ a{
     height: 26px;
     margin-right: 4%;
 }
-.botao-contato-header{
+.botao-vermelho-arredondado{
     background-color:  var(--cor-primaria-verm);
-    height: 50px;
+    position: relative;
+    height: 70px;
     width: 200px;
     padding: 0% 2%;
     border-radius: 40px;
@@ -66,8 +82,14 @@ a{
     align-items: center;
     justify-content: center;
 }   
-
-.botao-contato-header a{
+.area-clicavel{
+    position: absolute;
+    inset: 0;
+}
+.container-direita-header .botao-vermelho-arredondado{
+    height: 50px;
+}
+.botao-vermelho-arredondado a{
     color: white;
 }
 .shopping-button-header{
@@ -97,4 +119,58 @@ a{
 /*section*/
 .section-padrao{
     padding: 0% 10%;
+}
+/*section garota*/
+/*parte-esquerda*/
+.section-imagem-garota{
+    height: calc(100vh - 150px);
+    display: flex;
+}
+.section-imagem-garota > div{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    padding: 0% 5%;
+}
+.section-imagem-garota > div > *{
+    margin-bottom: 30px;
+}
+.container-botoes-garota{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.container-botoes-garota>*{
+    margin-right: 20px;
+}
+.botao-shadow-garota{
+    box-shadow: 0px 8px 14px rgba(156, 28, 28, 0.5); 
+}
+.botao-circular{
+    border-radius: 50%;
+    position: relative;
+}
+.botao-play-garota{
+    background-color: white;
+    width: 70px;
+    height: 70px;
+    box-shadow: 0px 8px 14px rgba(0, 0, 0, 0.5); 
+}
+.botao-play-garota::before{
+    content: url(../img/home/botao-play-ponta-de-seta.png);
+    position: absolute;
+    height: 36px;
+    width: 36px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%,-50%);
+    
+}
+/*parte-direita*/
+.container-direita-garota{
+    border-radius: 50%;
+    background-color: var(--cor-primaria-verm);
 }
