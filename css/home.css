@@ -1,0 +1,235 @@
+/*section garota*/
+/*parte-esquerda*/
+.section-imagem-garota{
+    height: calc(100vh - 150px);
+    display: flex;
+}
+.section-imagem-garota .container-esquerda-garota{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    width: 60%;
+    height: 100%;
+    padding: 0% 5%;
+}
+.section-imagem-garota .container-esquerda-garota h1{
+    width: 90%;
+}
+.section-imagem-garota .container-esquerda-garota > *{
+    margin-bottom: 30px;
+}
+.container-botoes-garota{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+}
+.container-botoes-garota>*{
+    margin-right: 20px;
+}
+.container-botoes-garota a{
+    font-size: 20px;
+}
+.botao-shadow-garota{
+    box-shadow: 0px 8px 14px rgba(156, 28, 28, 0.5); 
+}
+
+.botao-play-garota{
+    background-color: white;
+    height: 100%;
+    aspect-ratio: 1/1;
+    align-self: center;
+    box-shadow: 0px 8px 14px rgba(0, 0, 0, 0.2); 
+}
+.botao-play-garota>img{
+    position: absolute;
+    height: 50%;
+    aspect-ratio: 1/1;
+    align-self: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%,-50%);
+    
+}
+/*parte-direita*/
+.container-direita-garota{
+    position: relative;
+    width: 40%;
+    aspect-ratio: 1/1;
+    align-self: center;
+    border-radius: 50%;
+    background-color: var(--cor-primaria-verm);
+}
+.container-direita-garota > img{
+    position: absolute;
+    bottom: 0;
+    height: 120%;
+    left: 50%;
+    transform: translateX(-54%);
+}
+.container-pratos-inferiores{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 20%;
+}
+.container-pratos-inferiores .container-padrao-3d{
+    width: 45%;
+    height: 100%;
+    padding: 1% 2%;
+}
+.container-padrao-3d .imagem-comida{
+    height: 80%;
+    aspect-ratio: 1/1;
+    align-self: center;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../img/home/batata-bacon.jpg);
+}
+.container-padrao-3d .container-texto-comida{
+    margin-left: 5%;
+}
+.container-pratos-inferiores .container-padrao-3d p{
+    font-size: 12px;
+    font-weight: 700;
+}
+.container-pratos-inferiores .container-padrao-3d span{
+    font-size: 12px;
+}
+
+.container-padrao-3d.container-esquerda .imagem-comida{
+    background-image: url(../img/home/batata-picante.jpg);
+}
+.container-estrelas-avaliacao{
+    display: flex;
+    width: 80%;
+    height: 12px;
+    margin: 5% 0%;
+    align-items: center;
+    justify-content: space-between;
+}
+.container-estrelas-avaliacao div{
+    height: 100%;
+    aspect-ratio: 1/1;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container-estrelas-avaliacao .imagem-estrela{
+    background-image: url(../img/home/estrela.png);
+}
+.container-estrelas-avaliacao .imagem-estrela-vazia{
+    background-image: url(../img/home/estrela-vazia.png);
+}
+.container-pratos-inferiores .container-padrao-3d{
+    display: flex;
+    align-items: center;
+}
+/*section-direcionamento-cardápio*/
+.section-direcionamento-cardapio{
+    text-align: center;
+}
+.section-direcionamento-cardapio div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.section-direcionamento-cardapio .container-padrao-3d{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5% 0%;
+}
+.section-direcionamento-cardapio .container-padrao-3d>*{
+    margin-bottom: 2%;
+}
+.section-direcionamento-cardapio .container-padrao-3d .texto-padrao-bold{
+    font-size: 20px;
+}
+.section-direcionamento-cardapio .container-padrao-3d div{
+    width: 50%;
+    aspect-ratio: 1/1;
+    align-self: center;
+    background-color: var(--cor-texto-rosa);
+    position: relative;
+    border-radius: 50%;
+}
+.section-direcionamento-cardapio .container-padrao-3d img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 50%;
+    aspect-ratio: 1/1;
+}
+/*Section Mais Pedidos*/
+.containter-titulo-setas{
+    display: flex;
+    justify-content: space-between;
+    align-items:start;
+}
+.botao-seta-mais-pedidos{
+    width: 60px;
+    position: relative;
+    height: 60px;
+    background-color: #dddddd;
+    display: inline-block;
+}
+.botao-seta-mais-pedidos img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#seta-direita-mais-pedidos{
+    background-color: var(--cor-primaria-verm);
+}
+.conteiner-mais-pedidos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70vh;
+}
+.container-prato{
+    width: 25%;
+}
+/*Section chef*/
+.section-chef{
+    height: 100vh;
+}
+
+.lado-esquerdo{
+    position: relative;
+    height: 100%;
+}
+
+.lado-esquerdo img{
+    z-index: 999;
+    position: absolute;
+}
+.plano-fundo{
+    position: absolute;
+    bottom: 0;
+    height: 50%;
+    width: 100%;
+    background-color: var(--cor-primaria-verm);
+    border-radius: 40% 40% 20px 20px;
+}
+.balao-chef{
+    bottom: 2%;
+    right: -2%;
+    transform: rotate(180deg);
+    padding: 1% 2%;
+}
+.balao-chef>p{
+    transform: rotate(180deg);
+    font-size: 15px;
+}

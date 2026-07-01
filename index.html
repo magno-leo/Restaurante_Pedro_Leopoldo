@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/home.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -20,7 +20,7 @@
             <img src="img/shared/logo.png" alt="" class="logo">
             <nav>
                 <ul>
-                    <li><a href="">Home</a></li>
+                    <li><a href="" class="pagina-ativa">Home</a></li>
                     <li><a href="">Cardápio</a></li>
                     <li><a href="">Sobre</a></li>
                     <li><a href="">Cadastro</a></li>
@@ -28,9 +28,15 @@
             </nav>
         </div>
         <div class="container-direita-header">
-            <img src="img/shared/icon_search.png" alt="">
+            <form class="barra-pesquisa-header">
+                <input type="text" placeholder="Pesquise seu prato favorito">
+                <img src="img/shared/icon_search.png" alt="">
+            </form>
             <div class="shopping-button-header">
-                <div><p>8</p></div>
+                <a href="#" class="area-clicavel"></a>
+                <div>
+                    <p>8</p>
+                </div>
             </div>
             <div class="botao-vermelho-arredondado">
                 <img src="img/shared/phone-call.png" alt="">
@@ -43,21 +49,153 @@
         <section class="section-padrao section-imagem-garota">
             <div class="container-esquerda-garota">
                 <h1 class="titulo-section">Mergulhe no Sabor da Melhor <span>Batata Recheada</span></h1>
-                <p class="texto-padrao">Produzidas artesanalmente em casa, nossas marmitas combinam batatas ao murro e massas com muito sabor, cuidado e ingredientes frescos.</p>
+                <p class="texto-padrao">Produzidas artesanalmente em casa, nossas marmitas combinam batatas ao murro e
+                    massas com muito sabor, cuidado e ingredientes frescos.</p>
                 <div class="container-botoes-garota">
-                    <div class="botao-vermelho-arredondado botao-shadow-garota">
-                        <a class="texto-padrao-bold">Peça Agora</a>
+                    <div class="botao-vermelho-arredondado botao-shadow-garota botao-hover-aumenta glow-ao-aumentar">
+                        <a class="texto-padrao-bold ">Peça Agora</a>
                         <a href="#" class="area-clicavel"></a>
                     </div>
                     <a href="#" class="texto-padrao-bold">Ver Vídeo</a>
-                    <div class="botao-circular botao-play-garota">
+                    <div class="botao-circular botao-hover-aumenta botao-play-garota">
                         <a href="#" class="area-clicavel"></a>
+                        <img src="img/home/botao-play-ponta-de-seta.png" alt="">
                     </div>
                 </div>
             </div>
-            <div class="container-direita-garota ">
-                
+            <div class="container-direita-garota">
+                <img src="img/home/garota.png" alt="">
+                <div class="container-balao-fala">
+                    <p class="texto-roseado">Batata Bem Temperada</p>
+                </div>
+                <div class="container-pratos-inferiores">
+                    <div class="container-padrao-3d container-esquerda botao-hover-aumenta glow-ao-aumentar">
+                        <a href="#" class="area-clicavel"></a>
+                        <div class="imagem-comida"></div>
+                        <div class="container-texto-comida">
+                            <p>Batata Picante</p>
+                            <div class="container-estrelas-avaliacao">
+                                <div class="imagem-estrela"></div>
+                                <div class="imagem-estrela"></div>
+                                <div class="imagem-estrela"></div>
+                                <div class="imagem-estrela"></div>
+                                <div class="imagem-estrela-vazia"></div>
+                            </div>
+                            <p><span class="texto-roseado">R$</span>18</p>
+                        </div>
+                    </div>
+                    <div class="container-padrao-3d container-direita botao-hover-aumenta glow-ao-aumentar">
+                        <a href="#" class="area-clicavel"></a>
+                        <div class="imagem-comida"></div>
+
+                        <div class="container-texto-comida">
+                            <p>Batata Com Bacon</p>
+                            <div class="container-estrelas-avaliacao">
+                                <div class="imagem-estrela"></div>
+                                <div class="imagem-estrela"></div>
+                                <div class="imagem-estrela"></div>
+                                <div class="imagem-estrela"></div>
+                                <div class="imagem-estrela-vazia"></div>
+                            </div>
+                            <p><span class="texto-roseado">R$</span>23</p>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </section>
+        <section class="section-padrao section-direcionamento-cardapio">
+            <p class="texto-roseado texto-padrao-bold">FAVORITO DOS CLIENTES</p>
+            <p class="titulo-section">Categorias Populares</p>
+            <div>
+                <div class="container-padrao-3d botao-hover-aumenta glow-ao-aumentar">
+                    <a href="#" class="area-clicavel"></a>
+                    <div><img src="img/home/batata.png" alt=""></div>
+                    <p class="texto-padrao-bold">Batata Ao Murro</p>
+                    <p>(86 opções)</p>
+                </div>
+                <div class="container-padrao-3d botao-hover-aumenta glow-ao-aumentar">
+                    <a href="#" class="area-clicavel"></a>
+                    <div><img src="img/home/macarrao.png" alt=""></div>
+                    <p class="texto-padrao-bold">Massas</p>
+                    <p>(86 opções)</p>
+                </div>
+                <div class="container-padrao-3d botao-hover-aumenta glow-ao-aumentar">
+                    <a href="#" class="area-clicavel"></a>
+                    <div><img src="img/home/suco.png" alt=""></div>
+                    <p class="texto-padrao-bold">Batata Ao Murro</p>
+                    <p>(86 opções)</p>
+                </div>
+            </div>
+        </section>
+        <section class="section-padrao section-mais-pedidos">
+            <p class="texto-roseado texto-padrao-bold">DESTAQUES DO CARDÁPIO</p>
+            <div class="containter-titulo-setas">
+                <p class="titulo-section">Os Mais Pedidos Aqui na Batata</p>
+                <div>
+                    <div class="botao-circular botao-seta-mais-pedidos">
+                        <img src="img/home/seta-cinza-esquerda.png" alt="">
+                    </div>
+                    <div class="botao-circular botao-seta-mais-pedidos" id="seta-direita-mais-pedidos">
+                        <img src="img/home/seta-direita-branca.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="conteiner-mais-pedidos">
+                <div class="container-prato container-padrao-3d botao-hover-aumenta-diminue glow-ao-aumentar">
+                    <a href="#" class="area-clicavel"></a>
+                    <div class="container-favorito favorito-curtido"></div>
+                    <img src="img/home/prato1.png" alt="" class="imagem-prato">
+                    <p class="subtitulo-preto texto-padrao-bold">Batata Caipira</p>
+                    <p class="texto-descricao-do-item">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    <div>
+                        <p class="texto-padrao-bold"><span class="texto-roseado">R$</span>24.00</p>
+                        <div>
+                            <img class="estrela-prato" src="img/home/estrela.png" alt="">
+                            <p class="texto-padrao-bold texto-avaliacao-prato">4.6</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-prato container-padrao-3d botao-hover-aumenta-diminue glow-ao-aumentar">
+                    <a href="#" class="area-clicavel"></a>
+                    <div class="container-favorito"></div>
+                    <img src="img/home/prato2.png" alt="" class="imagem-prato">
+                    <p class="subtitulo-preto texto-padrao-bold">Macarrão Bolonhesa</p>
+                    <p class="texto-descricao-do-item">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    <div>
+                        <p class="texto-padrao-bold"><span class="texto-roseado">R$</span>23.00</p>
+                        <div>
+                            <img class="estrela-prato" src="img/home/estrela.png" alt="">
+                            <p class="texto-padrao-bold texto-avaliacao-prato">4.8</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-prato container-padrao-3d botao-hover-aumenta-diminue glow-ao-aumentar">
+                    <a href="#" class="area-clicavel"></a>
+                    <div class="container-favorito"></div>
+                    <img src="img/home/prato3.png" alt="" class="imagem-prato">
+                    <p class="subtitulo-preto texto-padrao-bold">Batata Com Bacon</p>
+                    <p class="texto-descricao-do-item">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    <div>
+                        <p class="texto-padrao-bold"><span class="texto-roseado">R$</span>26.00</p>
+                        <div>
+                            <img class="estrela-prato" src="img/home/estrela.png" alt="">
+                            <p class="texto-padrao-bold texto-avaliacao-prato">4.7</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="template-section-dir-esq section-chef">
+            <div class="lado-esquerdo">
+                <div class="plano-fundo"></div>
+                <img src="img/home/chefe.png" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <div class="container-balao-fala balao-chef">
+                    <p class="texto-preto">Produção artesanal😁</p>
+                </div>
+            </div>
+            <div></div>
         </section>
     </main>
     <footer></footer>
